@@ -17,9 +17,9 @@ let updateValue = function () {
 
 //update color
 let changeColor = () => {
-  if (count < -1) {
+  if (count < 0) {
     value.style.color = "rgb(255, 0, 0)";
-  } else if (count > 1) {
+  } else if (count > 0) {
     value.style.color = "rgb(60, 179, 113)";
   } else {
     value.style.color = "rgb(0, 0, 0)"
@@ -28,9 +28,9 @@ let changeColor = () => {
 
 //update background
 let borderColor = () => {
-  if (count < -1) {
+  if (count < 0) {
     value.style.borderColor = "rgb(255, 0, 0)";
-  } else if (count > 1) {
+  } else if (count > 0) {
     value.style.borderColor = "rgb(60, 179, 113)";
   } else {
     value.style.borderColor = "rgb(0, 0, 0)"
@@ -39,13 +39,13 @@ let borderColor = () => {
 
 //counter btns
 btnDecrease.addEventListener("click", function() {
-  value.textContent = count --;
+  value.textContent = --count;
   changeColor(); 
   borderColor();
 });
 
 btnIncrease.addEventListener("click", function() {
-  value.textContent = count ++;
+  value.textContent = --count;
   changeColor();
   borderColor();
 });
