@@ -45,7 +45,7 @@ btnDecrease.addEventListener("click", function() {
 });
 
 btnIncrease.addEventListener("click", function() {
-  value.textContent = --count;
+  value.textContent = ++count;
   changeColor();
   borderColor();
 });
