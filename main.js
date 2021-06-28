@@ -17,9 +17,9 @@ let updateValue = function () {
 
 //update color
 let changeColor = () => {
-  if (count < 0) {
+  if (count < -1) {
     value.style.color = "rgb(255, 0, 0)";
-  } else if (count > 0) {
+  } else if (count > 1) {
     value.style.color = "rgb(60, 179, 113)";
   } else {
     value.style.color = "rgb(0, 0, 0)"
@@ -28,9 +28,9 @@ let changeColor = () => {
 
 //update background
 let borderColor = () => {
-  if (count < 0) {
+  if (count < -1) {
     value.style.borderColor = "rgb(255, 0, 0)";
-  } else if (count > 0) {
+  } else if (count > 1) {
     value.style.borderColor = "rgb(60, 179, 113)";
   } else {
     value.style.borderColor = "rgb(0, 0, 0)"
